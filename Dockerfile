@@ -9,3 +9,4 @@ RUN echo "source /opt/peda/peda.py" >> ~/.gdbinit
 RUN cp /opt/checksec.sh/checksec /usr/local/bin/checksec
 RUN pip install pwntools
 RUN mkdir -p /opt/rp/build; cd /opt/rp/build; cmake /opt/rp; make; make install
+RUN /opt/radare2/sys/install.sh
