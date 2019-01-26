@@ -1,6 +1,6 @@
 FROM alpine:edge
 MAINTAINER Byeonggon Lee (gonny952@gmail.com)
-RUN apk update && apk add --no-cache bash musl-dev git gcc vim less gdb openssl-dev file nasm socat python2-dev py2-pip make libffi-dev g++ cmake
+RUN apk update && apk add --no-cache bash musl-dev git gcc vim less gdb openssl openssl-dev file nasm socat python2-dev py2-pip make libffi-dev g++ cmake
 RUN git clone https://github.com/longld/peda.git /opt/peda
 RUN git clone https://github.com/slimm609/checksec.sh /opt/checksec.sh
 RUN git clone -b v1 https://github.com/0vercl0k/rp /opt/rp
