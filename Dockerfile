@@ -5,6 +5,7 @@ RUN git clone https://github.com/longld/peda.git /opt/peda
 RUN git clone https://github.com/slimm609/checksec.sh /opt/checksec.sh
 RUN git clone -b v1 https://github.com/0vercl0k/rp /opt/rp
 RUN git clone https://github.com/radare/radare2 /opt/radare2
+RUN git clone https://github.com/NationalSecurityAgency/ghidra
 RUN echo "source /opt/peda/peda.py" >> ~/.gdbinit
 RUN cp /opt/checksec.sh/checksec /usr/local/bin/checksec
 RUN pip install pwntools
